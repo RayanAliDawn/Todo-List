@@ -5,9 +5,9 @@ export default function TodoInput(props) {
 
 
     return (
-        <div className='w-full flex flex-row gap-5'>
-            <input type='text' className='w-full ' placeholder='Add New' value={inputText} onChange={event => setInputText(event.target.value)} />
-            <button className='bg-blue-400 p-2 rounded-md cursor-pointer' onClick={() => { props.addlist(inputText) + setInputText('') }}>Enter</button>
+        <div className='w-full flex flex-row  border'>
+            <input type='text' className="w-full border-black rounded-lg  " placeholder='Add New' value={inputText} onChange={event => setInputText(event.target.value)} />
+            <button className='bg-black text-white shadow-md shadow-black p-2 rounded-lg cursor-pointer' onClick={() => { props.addlist(inputText) + setInputText('') }}>Enter</button>
         </div>
     )
 }
