@@ -7,14 +7,16 @@ import TodoList from './components/TodoList';
 function App() {
   const [listTodo, setListTodo] = useState([]);
   let addlist = (inputText) => {
+
     setListTodo([...listTodo, inputText]);
+
   }
 
   return (
-    <div className='flex justify-center items-center flex flex-col'>
+    <div className='flex flex-col justify-center items-center  '>
       <h1 className='font-semibold text-center text-gray-600 text-[1.5rem] '> THINGS TO DO</h1>
       <TodoInput addlist={addlist} />
-      <TodoList />
+
       {listTodo.map((listItem, i) => {
         return (
           <TodoList key={i} item={listItem} />
@@ -24,6 +26,17 @@ function App() {
 
       )
       }
+      <div className='w-full bg-blue-100 mt-10' >
+
+        <div className='p-4 font-normal  flex flex-row-reverse '>
+          <button className='bg-blue-400 rounded-md p-1  '  >All</button>
+          <button className='bg-blue-400 mx-2 rounded-md '>Active</button>
+          <button className='bg-blue-400 rounded-md '>Completed</button>
+
+        </div>
+
+      </div>
+
     </div>
 
 
