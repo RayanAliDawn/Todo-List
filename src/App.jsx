@@ -13,31 +13,32 @@ function App() {
   }
 
   return (
-    <div className='flex flex-col justify-center items-center  '>
-      <h1 className='font-semibold text-center text-gray-600 text-[1.5rem] '> THINGS TO DO</h1>
-      <TodoInput addlist={addlist} />
+    <div className='container max-w-full'>
+      <div className='flex flex-col justify-center items-center  '>
+        <h1 className='font-semibold text-center text-gray-600 text-[1.5rem] '> THINGS TO DO</h1>
+        <TodoInput addlist={addlist} />
 
-      {listTodo.map((listItem, i) => {
-        return (
-          <TodoList key={i} item={listItem} id='i' />
+        {listTodo.map((listItem, i) => {
+          return (
+            <TodoList key={i} item={listItem} id='i' />
+          )
+
+        }
+
         )
-
-      }
-
-      )
-      }
+        }
 
 
-      <div className='  w-full flex flex-row-reverse '>
-        <button className=' shadow-lg shadow-gray-300   '  >All</button>
-        <button className=' shadow-lg shadow-gray-300  mx-2  '>Active</button>
-        <button className=' shadow-lg shadow-gray-300   '>Completed</button>
+        <div className='  w-full flex flex-row-reverse '>
+          <button className=' shadow-lg shadow-gray-300   '  >All</button>
+          <button className=' shadow-lg shadow-gray-300  mx-2  '>Active</button>
+          <button className=' shadow-lg shadow-gray-300   '>Completed</button>
+
+        </div>
 
       </div>
 
     </div>
-
-
 
   )
 }
