@@ -49,7 +49,7 @@ function App() {
         <h1 className='m-8 font-semibold text-gray-600 text-[2rem] '> THINGS TO DO</h1>
 
         <form onSubmit={handleNewItemSubmit} className=" w-full ">
-          <input className="w-full p-2 " placeholder='Add New '
+          <input className="w-full p-2 bg-white" placeholder='Add New '
             type="text"
             value={newItemTitle}
             onChange={event => setNewItemTitle(event.target.value)}
