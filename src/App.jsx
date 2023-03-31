@@ -46,7 +46,7 @@ function App() {
   return (
     <div className='Container w-full '>
       <div className='flex flex-col justify-center items-center m-4 bg-white p-1 shadow-2xl'>
-        <h1 className='m-8 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-gray-500 from-10% via-sky-500 via-30% to-gray-500 to-90% text-[1.9rem] '> THINGS TO DO</h1>
+        <h1 className='m-8 font-semibold animate-text text-transparent bg-clip-text bg-gradient-to-r from-gray-500 from-10% via-sky-500 via-30% to-gray-500 to-90% text-[1.9rem] '> THINGS TO DO</h1>
 
         <form onSubmit={handleNewItemSubmit} className=" w-full shadow ">
           <input className="w-full p-2 drop-shadow-xl bg-white " placeholder='Add New Here '
@@ -87,12 +87,7 @@ function App() {
 
         </div>
 
-        <span className="relative flex  h-9 w-36 justify-center items-center">
-
-          <span className="animate-ping absolute inline-flex h-7 w-30 opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 from-10% via-sky-900 via-30% to-gray-900 to-90% text-[0.9rem]">Keep going!</span>
-
-        </span>
-
+        <h1 class="animate-text bg-gradient-to-r from-gray-500 via-sky-500 to-gray-500 bg-clip-text text-transparent  font-black text-[1rem]">keep Going </h1>
 
       </div>
     </div>
